@@ -1,25 +1,629 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mxT-R2-sus">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="MX1-Ky-bk7">
+            <objects>
+                <viewController id="mxT-R2-sus" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rdh-TG-WOP"/>
+                        <viewControllerLayoutGuide type="bottom" id="KXP-wy-ftq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0RC-Ld-CU7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uk7-ml-h3T">
+                                <rect key="frame" x="112" y="309" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Rr8-fA-47R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sby-ME-Ac9">
+                                <rect key="frame" x="112" y="394" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <state key="normal" title="How To">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jeu-fd-SYT" kind="show" id="f78-Uj-z8J"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmJ-at-sDG">
+                                <rect key="frame" x="20" y="20" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DV8-e0-rpd">
+                                <rect key="frame" x="89" y="20" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRx-kB-d8Q">
+                                <rect key="frame" x="154" y="20" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuc-Gk-13N">
+                                <rect key="frame" x="289" y="20" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MR-gO-2Ul">
+                                <rect key="frame" x="228" y="20" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-dG-QQU">
+                                <rect key="frame" x="69" y="81" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emz-UE-6X3">
+                                <rect key="frame" x="125" y="81" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xli-jx-f6A">
+                                <rect key="frame" x="20" y="81" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="U" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-Rc-Eyh">
+                                <rect key="frame" x="185" y="81" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO7-QN-VcA">
+                                <rect key="frame" x="289" y="81" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYp-t6-Cxc">
+                                <rect key="frame" x="243" y="81" width="66" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cve-GE-Nyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-471.5" y="120.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jSK-Og-p5R">
+            <objects>
+                <viewController id="Jeu-fd-SYT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ydD-wm-VlE"/>
+                        <viewControllerLayoutGuide type="bottom" id="KwS-F1-qPo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iJK-7b-WnT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXr-Yo-D1w">
+                                <rect key="frame" x="0.0" y="631" width="106" height="36"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                <state key="normal" title="Back to Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mxT-R2-sus" kind="show" id="qFu-OM-tV2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgU-4C-ljd" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="24" y="32" width="50" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdN-1t-bzO" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-au-6O7" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="208" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LlZ-MR-tdw" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="78" y="208" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5n-YE-ggv" userLabel="s1" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="433" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqF-iO-G4r" userLabel="s2" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="78" y="433" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Wf-8z-loV" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="491" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmG-9e-RmA">
+                                <rect key="frame" x="135" y="20" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This is a tile, every time you tap on it, it changes color, from red to blue                                                                                        </string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tapping a Tile dosn't just change its color but also those next to it                                  " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-e1-Gaf">
+                                <rect key="frame" x="135" y="208" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1v-UK-zp0">
+                                <rect key="frame" x="135" y="433" width="240" height="133"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This can create some interesting ways to minipulate the colors of the Tiles.............But whats the goal? you will be given a master Tile below your grid, your goal? is to get a 5x5 grid of Tiles the same color as the master Tile</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XpW-Ge-ZVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111.5" y="938.5"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="S_S_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MPL-ne-Mcp" userLabel="s1" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="49" y="60" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eXz-ZG-dhF" appends="YES" id="eCE-B5-RgR"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsX-Rj-Qjk" userLabel="s2" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="107" y="60" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bvL-S1-qCq" appends="YES" id="vjB-fc-FYe"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2l-ko-bN4" userLabel="s3" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="165" y="60" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7UD-Nz-od7" appends="YES" id="heu-FX-5Sk"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-Gn-j6q" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="223" y="60" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IBO-Sm-weH" appends="YES" id="gyB-eZ-O2k"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fv4-v8-u8x" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="281" y="60" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="50m-RE-2qN" appends="YES" id="4WL-Ha-1zv"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JEc-lc-ogF" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="49" y="118" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UIE-ep-Cfu" appends="YES" id="0wM-yh-Oea"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Oq-LH-ffC" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="107" y="118" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mam-u6-Y56" appends="YES" id="DFx-gf-fXk"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m58-JD-Nqk" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="165" y="118" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UMt-89-H4x" appends="YES" id="SNq-if-n7Y"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSN-8h-cKz" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="223" y="118" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iXP-sC-31V" appends="YES" id="81V-xF-xEs"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eat-0W-Emv" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="281" y="118" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yA6-0Y-cK6" appends="YES" id="gs1-7g-zuO"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHz-8M-CNH" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="49" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GEB-gW-87x" appends="YES" id="xSr-v6-hXE"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1Y-Zw-cg6" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="107" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lN6-3Q-E85" appends="YES" id="2fD-qs-b9A"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Owm-od-r9X" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="165" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3nd-2D-RDO" appends="YES" id="Ozw-Ba-xhX"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-FS-4lZ" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="223" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Hf2-bO-W2L" appends="YES" id="bYX-Q3-5Yp"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yEe-Fc-Vs5" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="281" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Gyr-mA-PMP" appends="YES" id="uMF-c1-LEd"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQi-cY-OBc" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="49" y="234" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6UZ-Vf-B0e" appends="YES" id="dtG-Na-bhE"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mB-uy-d0T" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="107" y="234" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CPF-g7-qHO" appends="YES" id="wDR-mt-kbP"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sdz-bi-ooV" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="165" y="234" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DBR-P8-TdJ" appends="YES" id="dEi-CE-3gV"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8X-Cx-2Wy" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="223" y="234" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qCe-aD-sgT" appends="YES" id="cZ3-cM-5NF"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmS-VU-Fxh" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="281" y="234" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="o9Z-SB-zCc" appends="YES" id="plj-Z0-8Gg"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPW-30-X9R" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="49" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h0j-Ys-qJQ" appends="YES" id="jsR-cv-xI9"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJJ-rc-4dJ" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="107" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h9M-cc-0zQ" appends="YES" id="inW-ik-U9r"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sO0-zj-2ti" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="165" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8IC-3G-fIp" appends="YES" id="00m-of-Tcp"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DsL-WD-T2s" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="281" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F07-35-3E6" appends="YES" id="7CS-MQ-bkJ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSX-4u-1Cj" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="223" y="292" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VOK-oe-Jqm" appends="YES" id="g9j-D6-uXK"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUQ-wP-iZD">
+                                <rect key="frame" x="267" y="416" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <state key="normal" title="Randomize">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RX8-fC-VRy"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AN-aZ-oKG" customClass="Tile" customModule="S_S_" customModuleProvider="target">
+                                <rect key="frame" x="49" y="393" width="75" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeX-Pp-WFt">
+                                        <rect key="frame" x="0.0" y="27" width="75" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-tH-80g">
+                                <rect key="frame" x="49" y="350" width="282" height="42"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1t-GZ-H7B">
+                                <rect key="frame" x="0.0" y="631" width="106" height="36"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <state key="normal" title="Back to Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mxT-R2-sus" kind="show" id="xan-fk-jQZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="h8h-tH-80g" id="Qx1-ol-Jc5"/>
+                        <outlet property="s1" destination="MPL-ne-Mcp" id="ngQ-KG-9Qp"/>
+                        <outlet property="s10" destination="eat-0W-Emv" id="aG8-Ae-ktQ"/>
+                        <outlet property="s11" destination="IHz-8M-CNH" id="XnN-MC-w6A"/>
+                        <outlet property="s12" destination="d1Y-Zw-cg6" id="OB6-vS-2cW"/>
+                        <outlet property="s13" destination="Owm-od-r9X" id="BIP-RD-NQZ"/>
+                        <outlet property="s14" destination="RzV-FS-4lZ" id="emC-HL-dgc"/>
+                        <outlet property="s15" destination="yEe-Fc-Vs5" id="wZW-M2-FAc"/>
+                        <outlet property="s16" destination="NQi-cY-OBc" id="734-Td-nQO"/>
+                        <outlet property="s17" destination="3mB-uy-d0T" id="MOY-N6-QGg"/>
+                        <outlet property="s18" destination="Sdz-bi-ooV" id="LQO-k2-MN3"/>
+                        <outlet property="s19" destination="g8X-Cx-2Wy" id="yVs-l7-qqh"/>
+                        <outlet property="s2" destination="gsX-Rj-Qjk" id="tIf-5D-eeZ"/>
+                        <outlet property="s20" destination="wmS-VU-Fxh" id="bw5-FN-NZu"/>
+                        <outlet property="s21" destination="VPW-30-X9R" id="w3v-Fc-qCq"/>
+                        <outlet property="s22" destination="KJJ-rc-4dJ" id="qCj-KJ-X7r"/>
+                        <outlet property="s23" destination="sO0-zj-2ti" id="cYO-TJ-EWz"/>
+                        <outlet property="s24" destination="sSX-4u-1Cj" id="gCI-BT-x5E"/>
+                        <outlet property="s25" destination="DsL-WD-T2s" id="tCK-gO-eqe"/>
+                        <outlet property="s3" destination="S2l-ko-bN4" id="nji-tV-2H1"/>
+                        <outlet property="s4" destination="OZf-Gn-j6q" id="qaP-er-JXb"/>
+                        <outlet property="s5" destination="fv4-v8-u8x" id="Oon-Zq-bYP"/>
+                        <outlet property="s6" destination="JEc-lc-ogF" id="Xon-4W-zQT"/>
+                        <outlet property="s7" destination="5Oq-LH-ffC" id="vot-ds-G1L"/>
+                        <outlet property="s8" destination="m58-JD-Nqk" id="SqY-hL-CJn"/>
+                        <outlet property="s9" destination="gSN-8h-cKz" id="mkC-NH-ReP"/>
+                        <outlet property="won" destination="8AN-aZ-oKG" id="dpg-Us-4FK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eXz-ZG-dhF" userLabel="square">
+                    <connections>
+                        <action selector="tileTapped:" destination="BYZ-38-t0r" id="OCj-0B-bMN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bvL-S1-qCq" userLabel="squareTwo">
+                    <connections>
+                        <action selector="tileTwoTapped:" destination="BYZ-38-t0r" id="XFm-Ze-S6Y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7UD-Nz-od7" userLabel="square3">
+                    <connections>
+                        <action selector="s3Tapped:" destination="BYZ-38-t0r" id="Cod-ak-n9F"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="IBO-Sm-weH" userLabel="s4">
+                    <connections>
+                        <action selector="s4Tapped:" destination="BYZ-38-t0r" id="AqU-u8-p1y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="50m-RE-2qN" userLabel="s5">
+                    <connections>
+                        <action selector="s5Tapped:" destination="BYZ-38-t0r" id="GYR-Io-kgI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UIE-ep-Cfu" userLabel="s6">
+                    <connections>
+                        <action selector="s6Tapped:" destination="BYZ-38-t0r" id="06c-NA-i0z"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mam-u6-Y56" userLabel="s7">
+                    <connections>
+                        <action selector="s7tapped:" destination="BYZ-38-t0r" id="zkx-KA-2ct"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UMt-89-H4x" userLabel="s8">
+                    <connections>
+                        <action selector="s8Tapped:" destination="BYZ-38-t0r" id="zrc-MN-tFw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iXP-sC-31V" userLabel="s9">
+                    <connections>
+                        <action selector="s9Tapped:" destination="BYZ-38-t0r" id="oDH-wT-mYa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yA6-0Y-cK6" userLabel="s10">
+                    <connections>
+                        <action selector="s10Tapped:" destination="BYZ-38-t0r" id="Tft-HZ-1J1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="GEB-gW-87x" userLabel="s11">
+                    <connections>
+                        <action selector="s11Tapped:" destination="BYZ-38-t0r" id="00p-T4-bUZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="lN6-3Q-E85" userLabel="s12">
+                    <connections>
+                        <action selector="s12Tapped:" destination="BYZ-38-t0r" id="ku8-0s-hnt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3nd-2D-RDO" userLabel="s13">
+                    <connections>
+                        <action selector="s13Tapped:" destination="BYZ-38-t0r" id="dCD-6q-RW4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Hf2-bO-W2L" userLabel="s14">
+                    <connections>
+                        <action selector="s14Tapped:" destination="BYZ-38-t0r" id="Wvu-ca-e6f"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Gyr-mA-PMP" userLabel="s15">
+                    <connections>
+                        <action selector="s15Tapped:" destination="BYZ-38-t0r" id="wqV-fZ-ZRC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6UZ-Vf-B0e" userLabel="s16">
+                    <connections>
+                        <action selector="s16Tapped:" destination="BYZ-38-t0r" id="qTL-RH-7gk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CPF-g7-qHO" userLabel="s17">
+                    <connections>
+                        <action selector="s17Tapped:" destination="BYZ-38-t0r" id="EQE-Sp-YZh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DBR-P8-TdJ" userLabel="s18">
+                    <connections>
+                        <action selector="s18Tapped:" destination="BYZ-38-t0r" id="nwG-Gg-2uL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qCe-aD-sgT" userLabel="s19">
+                    <connections>
+                        <action selector="s19Tapped:" destination="BYZ-38-t0r" id="GCo-Lx-rhy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="o9Z-SB-zCc" userLabel="s20">
+                    <connections>
+                        <action selector="s20Tapped:" destination="BYZ-38-t0r" id="K0X-wo-Wc2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="h0j-Ys-qJQ" userLabel="s21">
+                    <connections>
+                        <action selector="s21Tapped:" destination="BYZ-38-t0r" id="d3b-4M-lFr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="h9M-cc-0zQ" userLabel="s22">
+                    <connections>
+                        <action selector="s22Tapped:" destination="BYZ-38-t0r" id="sCy-Z0-Rlf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8IC-3G-fIp" userLabel="s23">
+                    <connections>
+                        <action selector="s23Tapped:" destination="BYZ-38-t0r" id="acY-HV-XV6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VOK-oe-Jqm" userLabel="s24">
+                    <connections>
+                        <action selector="s24Tapped:" destination="BYZ-38-t0r" id="W2V-zv-B4A"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="F07-35-3E6" userLabel="s25">
+                    <connections>
+                        <action selector="s25Tapped:" destination="BYZ-38-t0r" id="qDz-JL-TEp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="258.5" y="120.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xan-fk-jQZ"/>
+    </inferredMetricsTieBreakers>
 </document>
